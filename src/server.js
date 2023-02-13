@@ -12,6 +12,12 @@ server.use(jsonServer.bodyParser);
 
 server.use(authRoutes);
 
+// Add authentication to routes in db.json
+server.use('/users', authenticate);
+server.use('/posts', authenticate);
+server.use('/comments', authenticate);
+
+// Custom routes
 server.get('/protected', authenticate, (req, res) => {
   res.status(200).send('Protected data');
 });
