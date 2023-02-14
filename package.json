@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "seed:data": "node src/db/seed-data.js",
     "start": "node src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^8.3.1",
     "dotenv": "^16.3.1",
     "json-server": "^0.17.4",
     "jsonwebtoken": "^9.0.2"
