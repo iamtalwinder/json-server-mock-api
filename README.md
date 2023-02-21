@@ -10,8 +10,9 @@
 
 ## Prerequisites
 Before starting, ensure you have the following installed:
-- Node.js (Recommended version X or higher)
-- npm (Recommended version X or higher)
+- Node.js
+- npm
+- docker - if running with docker
 
 ## Installation
 To set up the project on your local machine:
@@ -58,8 +59,30 @@ The server will run on http://localhost:3000.
   - /users: Access user data.
   - /posts: Retrieve posts data.
   - /comments: Fetch comments data.
-  
+
 - /protected: A custom route demonstrating protected data access.
+
+## Running with docker
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/iamtalwinder/json-server-mock-api.git
+   ```
+
+2. Change directory to the project folder:
+    ```bash
+    cd json-server-mock-api
+    ```
+
+3. Build the image
+    ```bash
+    docker build -t json-server-mock-api .
+    ```
+
+4. Run project
+    ```bash
+    docker run -p 3000:3000 json-server-mock-api
+    ```
 
 ## Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.

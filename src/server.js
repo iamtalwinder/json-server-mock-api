@@ -1,5 +1,5 @@
 const jsonServer = require('json-server');
-const { DB_PATH } = require('./config');
+const { DB_PATH, PORT } = require('./config');
 const authRoutes = require('./routes/auth');
 const authenticate = require('./middlewares/authenticate');
 
@@ -24,6 +24,6 @@ server.get('/protected', authenticate, (req, res) => {
 
 server.use(router);
 
-server.listen(3000, () => {
+server.listen(PORT, () => {
   console.log('Server is running');
 });
