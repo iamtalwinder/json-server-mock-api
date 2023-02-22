@@ -1,4 +1,6 @@
-# json-server-mock-api
+# json-server-mock-
+
+[Blog Post](https://talwinder.tech/blog/building-mock-api-with-json-server)
 
 ## Overview
 `json-server-mock-api` is a demonstration project that provides a practical example of integrating authentication into a JSON Server mock API. This project not only illustrates how to secure mock API routes but also demonstrates best practices for setting up a mock server and generating dynamic, realistic data using Faker.
@@ -7,6 +9,42 @@
 - **Authentication Integration**: Implement authentication in JSON Server to protect API routes.
 - **Best Practices for Mocking**: Structured approach to setting up a mock API server.
 - **Data Generation with Faker**: Use Faker to generate dynamic, realistic data for the mock API.
+
+
+## Project Structure
+
+```bash
+    src
+      - db
+         -- db.json
+         -- index.js
+         -- seed-data.js
+      - middleware
+         -- authenticate.js
+      - routes
+         -- auth.js
+      - config.js
+      - server.js
+```
+
+**Explanation:**
+
+- **`/src` Directory**: The main source code of the project.
+
+  - **`/db`**: Contains files related to the mock database.
+    - `db.json`: The mock database file, which JSON Server uses to create the API.
+    - `index.js`: Central file for database configurations or exports.
+    - `seed-data.js`: A script to generate and populate `db.json` with dynamic data using Faker.
+
+  - **`/middleware`**: Holds middleware functions.
+    - `authenticate.js`: The authentication middleware to protect certain API routes.
+
+  - **`/routes`**: Contains files defining various API routes.
+    - `auth.js`: Manages authentication-related routes, like login and token validation.
+
+  - `config.js`: A configuration file for the project, possibly including settings like database paths, API keys, or environment-specific configurations.
+
+  - `server.js`: The main server file where JSON Server is configured and started. This file integrates all the routes, middleware, and database configurations.
 
 ## Prerequisites
 Before starting, ensure you have the following installed:
