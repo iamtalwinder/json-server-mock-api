@@ -1,6 +1,20 @@
-# json-server-mock-
+# json-server-mock-api
 
 [Blog Post](https://talwinder.tech/blog/building-mock-api-with-json-server)
+
+## Table of Contents
+- [JSON server mock API](#json-server-mock-api)
+    - [Overview](#overview)
+    - [Features](#features)
+    - [Project Structure](#project-structure)
+    - [Prerequisites](#prerequisites)
+    - [Installation](#installation)
+    - [Seeding the Database](#seeding-the-database)
+    - [API Endpoints](#api-endpoints)
+    - [Running with docker](#running-with-docker)
+    - [Contributing](#contributing)
+    - [Contact](#contact)
+
 
 ## Overview
 `json-server-mock-api` is a demonstration project that provides a practical example of integrating authentication into a JSON Server mock API. This project not only illustrates how to secure mock API routes but also demonstrates best practices for setting up a mock server and generating dynamic, realistic data using Faker.
